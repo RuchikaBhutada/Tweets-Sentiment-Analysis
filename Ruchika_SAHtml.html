@@ -1,0 +1,2632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>9165dfa7d90143beb87c2ecd526f07e1</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell code" id="UeIKp1CVbF0t">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tweepy <span class="im">as</span> tp</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> keras</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.sentiment.util <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> mbpt</span></code></pre></div>
+</div>
+<div class="cell code" id="PK3fLCobbJYH">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>authenticatin <span class="op">=</span> tp.OAuthHandler(<span class="st">&#39;OlQUUNxH50bKtJy3oEsZBs5GW&#39;</span>, <span class="st">&#39;PM4MO4uSe8DHEkWsaPJ1hUXm9AyXK7k8GRnSXuzL6MIvFANYyR&#39;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>authenticatin.set_access_token(<span class="st">&#39;1255808850789167104-8HUNhV6XfJkNeiEAJjeK8oOxMvQoN0&#39;</span>, <span class="st">&#39;VPR3T76vTZ4Eke5hNMK4pTucGuA07A6BYFZZBBt39q8Ro&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Access_api <span class="op">=</span> tp.API(authenticatin, wait_on_rate_limit<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+</div>
+<div class="cell code"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:242}"
+id="1Ku2uJKkYZN6" data-outputId="abb0b84a-d20e-40ee-c1e3-d7d468044503">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>hashtags <span class="op">=</span> [<span class="st">&quot;Duke&quot;</span>, <span class="st">&quot;DukeUniversity&quot;</span>, <span class="st">&quot;DukeStudents&quot;</span>, <span class="st">&quot;DukeBlueDevils&quot;</span>, <span class="st">&quot;DukeNation&quot;</span>, <span class="st">&quot;ForeverDuke&quot;</span>, <span class="st">&quot;PictureDuke&quot;</span>, <span class="st">&quot;GoDuke&quot;</span>, <span class="st">&quot;DukeGang&quot;</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>unique_tweets <span class="op">=</span> <span class="bu">set</span>()</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>tweet_list <span class="op">=</span> []</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> h <span class="kw">in</span> hashtags:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        query <span class="op">=</span> h</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Loop through search results using pagination</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> pg <span class="kw">in</span> tp.Cursor(Access_api.search_tweets, q <span class="op">=</span> h, lang <span class="op">=</span> <span class="st">&#39;en&#39;</span>, tweet_mode <span class="op">=</span> <span class="st">&#39;extended&#39;</span>, count <span class="op">=</span> <span class="dv">100</span>).pages(<span class="dv">200</span>):</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Loop through tweets on the page</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> t <span class="kw">in</span> pg:</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Check if the tweet is a retweet or a duplicate</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> <span class="st">&#39;retweeted_status&#39;</span> <span class="kw">in</span> <span class="bu">dir</span>(t):</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                    tweet <span class="op">=</span> t.retweeted_status.full_text</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>                <span class="cf">else</span>:</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                    tweet <span class="op">=</span> t.full_text</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>                    </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>                tweet <span class="op">=</span> re.sub(<span class="vs">r&quot;(#[\d\w]+)|(http\S+)&quot;</span>, <span class="st">&quot;&quot;</span>, tweet).strip()</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> tweet <span class="kw">not</span> <span class="kw">in</span> unique_tweets:</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>                    unique_tweets.add(tweet)</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>                    tweet_list.append({ </span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&#39;Hashtag&#39;</span>: h, </span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&#39;Date_Created&#39;</span>: t.created_at,</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&#39;Username&#39;</span>:t.user.name,</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&#39;Tweet&#39;</span>: tweet,})</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>TweetDF <span class="op">=</span> pd.DataFrame(tweet_list)</span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>TweetDF.head()</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>WARNING:tweepy.api:Rate limit reached. Sleeping for: 9
+WARNING:tweepy.api:Rate limit reached. Sleeping for: 767
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="4">
+
+  <div id="df-8678f5d2-e811-480d-9f47-93e815de624b">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8678f5d2-e811-480d-9f47-93e815de624b')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8678f5d2-e811-480d-9f47-93e815de624b button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8678f5d2-e811-480d-9f47-93e815de624b');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="111" id="8Csuc99ubQg8">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>TweetDF.to_csv(<span class="st">&#39;University_Tweets_Duke.csv&#39;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="112"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="npyEeH7AbRPs" data-outputId="81769b49-9f56-4551-a751-d50f45604fa8">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>DukeT <span class="op">=</span> pd.read_csv(<span class="st">&#39;University_Tweets_Duke.csv&#39;</span>, header <span class="op">=</span> <span class="dv">0</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>DukeT <span class="op">=</span> DukeT.dropna(axis <span class="op">=</span> <span class="dv">0</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>DukeT <span class="op">=</span> DukeT.reset_index(drop <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(DukeT.info())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 7106 entries, 0 to 7105
+Data columns (total 4 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   Hashtag       7106 non-null   object
+ 1   Date_Created  7106 non-null   object
+ 2   Username      7106 non-null   object
+ 3   Tweet         7106 non-null   object
+dtypes: object(4)
+memory usage: 222.2+ KB
+None
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="113"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Z9lRO2agYnn2" data-outputId="da1c1e6a-e0d7-4bf8-ed93-6161b998dd46">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> string</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># for all NLP related operations on text</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nltk <span class="im">as</span> nk</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.corpus <span class="im">import</span> stopwords</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.tokenize <span class="im">import</span> sent_tokenize, word_tokenize</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.sentiment.vader <span class="im">import</span> SentimentIntensityAnalyzer</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.stem <span class="im">import</span> WordNetLemmatizer</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.stem.porter <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> CountVectorizer, TfidfVectorizer</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> f1_score, confusion_matrix, accuracy_score</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="co"># ignoring all the warnings</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&quot;ignore&quot;</span>, category<span class="op">=</span><span class="pp">DeprecationWarning</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># downloading stopwords corpus</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>nk.download(<span class="st">&#39;stopwords&#39;</span>)</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>nk.download(<span class="st">&#39;wordnet&#39;</span>)</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>nk.download(<span class="st">&#39;opinion_lexicon&#39;</span>)</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>sWords <span class="op">=</span> <span class="bu">set</span>(stopwords.words(<span class="st">&quot;english&quot;</span>))</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="co"># for showing all the plots inline</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to /root/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package opinion_lexicon to /root/nltk_data...
+[nltk_data]   Package opinion_lexicon is already up-to-date!
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="114"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="tlJOLYKzwJu6" data-outputId="663dbc7f-91c9-4d9e-8a0b-127c32e2dd71">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>DukeT.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="114">
+
+  <div id="df-f47a646a-f7d6-4ee7-a551-1b4e7c4f1229">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f47a646a-f7d6-4ee7-a551-1b4e7c4f1229')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f47a646a-f7d6-4ee7-a551-1b4e7c4f1229 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f47a646a-f7d6-4ee7-a551-1b4e7c4f1229');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="115" id="WJ73R5Ptyv6H">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> rm_pa(tx, regex_pat):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> re.findall(regex_pat, tx)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> r:</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>        tx <span class="op">=</span> re.sub(i, <span class="st">&#39;&#39;</span>, tx)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> tx </span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="116"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="zzltp7qOy4KT" data-outputId="83b7e629-502b-4748-d635-3fd1fb46395c">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>] <span class="op">=</span> np.vectorize(rm_pa)(DukeT[<span class="st">&#39;Tweet&#39;</span>], <span class="st">&quot;@[\w]*: | *RT*&quot;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="116">
+
+  <div id="df-17b28908-7e3f-4b06-bf8b-938245d40f08">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>@septimusajprime This is like performing for D...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-17b28908-7e3f-4b06-bf8b-938245d40f08')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-17b28908-7e3f-4b06-bf8b-938245d40f08 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-17b28908-7e3f-4b06-bf8b-938245d40f08');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="117"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="N2jcvrzpwOW7" data-outputId="c232a948-7118-4a04-d325-6c297134a634">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Duke_CT <span class="op">=</span> []</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, row <span class="kw">in</span> DukeT.iterrows():</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Here we are filtering out all the words that contains link</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    words_without_links <span class="op">=</span> [word <span class="cf">for</span> word <span class="kw">in</span> row.Duke_cleaned_tweets.split() <span class="cf">if</span> <span class="st">&#39;http&#39;</span> <span class="kw">not</span> <span class="kw">in</span> word]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    Duke_CT.append(<span class="st">&#39; &#39;</span>.join(words_without_links))</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>] <span class="op">=</span> Duke_CT</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="117">
+
+  <div id="df-7ba9f929-e9df-43b0-967c-2e9e63aeb249">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>@SmiythYaslin They don’t need them. They don’t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty. Dior is honored to ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>@septimusajprime This is like performing for D...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow! 😍🤌🏾 A closer look at the formal three-pie...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on . Based on the 4th child of the Duke of Man...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-7ba9f929-e9df-43b0-967c-2e9e63aeb249')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-7ba9f929-e9df-43b0-967c-2e9e63aeb249 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-7ba9f929-e9df-43b0-967c-2e9e63aeb249');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="119"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="H4YGqY1BwRhm" data-outputId="95042af9-f470-4ae2-a4e4-e4cd7faf5f58">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>DukeT <span class="op">=</span> DukeT[DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>]<span class="op">!</span> <span class="op">=</span> <span class="st">&#39;&#39;</span>]</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="119">
+
+  <div id="df-6edfbd34-34be-4577-9aed-35e0fd1f2774">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>@SmiythYaslin They don’t need them. They don’t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty. Dior is honored to ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>@septimusajprime This is like performing for D...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow! 😍🤌🏾 A closer look at the formal three-pie...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on . Based on the 4th child of the Duke of Man...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6edfbd34-34be-4577-9aed-35e0fd1f2774')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-6edfbd34-34be-4577-9aed-35e0fd1f2774 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-6edfbd34-34be-4577-9aed-35e0fd1f2774');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="121"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="XOjwx3rTwZqP" data-outputId="3c02f830-1a76-477b-829f-e493e3f6b03d">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>DukeT.drop_duplicates(subset<span class="op">=</span>[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>], keep <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="121">
+
+  <div id="df-ccfb2df6-493f-4e6e-9352-12d2e408be6a">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>@SmiythYaslin They don’t need them. They don’t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty. Dior is honored to ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>@septimusajprime This is like performing for D...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow! 😍🤌🏾 A closer look at the formal three-pie...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on . Based on the 4th child of the Duke of Man...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-ccfb2df6-493f-4e6e-9352-12d2e408be6a')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-ccfb2df6-493f-4e6e-9352-12d2e408be6a button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-ccfb2df6-493f-4e6e-9352-12d2e408be6a');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="122"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="dpYeCSr2wcIN" data-outputId="8f128785-c54e-49bf-8e4f-8453378675f5">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>DukeT <span class="op">=</span> DukeT.reset_index(drop <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="122">
+
+  <div id="df-b51c41f7-e976-457b-88a3-f9cb7c88bc00">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>@SmiythYaslin They don’t need them. They don’t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty. Dior is honored to ...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>@septimusajprime This is like performing for D...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow! 😍🤌🏾 A closer look at the formal three-pie...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on . Based on the 4th child of the Duke of Man...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b51c41f7-e976-457b-88a3-f9cb7c88bc00')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-b51c41f7-e976-457b-88a3-f9cb7c88bc00 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-b51c41f7-e976-457b-88a3-f9cb7c88bc00');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="123"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PlGtFmLrztlz" data-outputId="0a94e967-0a1d-45f8-de88-238088fcc88d">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>DukeT.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 7106 entries, 0 to 7105
+Data columns (total 5 columns):
+ #   Column               Non-Null Count  Dtype 
+---  ------               --------------  ----- 
+ 0   Hashtag              7106 non-null   object
+ 1   Date_Created         7106 non-null   object
+ 2   Username             7106 non-null   object
+ 3   Tweet                7106 non-null   object
+ 4   Duke_cleaned_tweets  7106 non-null   object
+dtypes: object(5)
+memory usage: 277.7+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="124"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:443}"
+id="BrBF575DzS_k" data-outputId="b0b1833c-d22a-496f-c7fc-4cb00717ae64">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>] <span class="op">=</span> DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>].<span class="bu">str</span>.replace(<span class="st">&quot;[^a-zA-Z# ]&quot;</span>, <span class="st">&quot;&quot;</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-124-9031760447e9&gt;:1: FutureWarning: The default value of regex will change from True to False in a future version.
+  DukeT[&#39;Duke_cleaned_tweets&#39;] = DukeT[&#39;Duke_cleaned_tweets&#39;].str.replace(&quot;[^a-zA-Z# ]&quot;, &quot;&quot;)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="124">
+
+  <div id="df-f4cd361c-b7ab-46cf-b25e-24bb636925f8">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>the Queen is dead in Duke Nukem D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>SmiythYaslin They dont need them They dont eve...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking with the duke guan ha ha laugh I tried t...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit for royalty Dior is honored to h...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>NeonBear Well at least you still have hair on ...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V Obsidian Brigade is a tactical turnb...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>septimusajprime This is like performing for Da...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love this image of The Duke of Edinburgh He de...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow  A closer look at the formal threepiece su...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>on  Based on the th child of the Duke of Manch...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f4cd361c-b7ab-46cf-b25e-24bb636925f8')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f4cd361c-b7ab-46cf-b25e-24bb636925f8 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f4cd361c-b7ab-46cf-b25e-24bb636925f8');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="126"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:407}"
+id="ReboYsrCwjYX" data-outputId="c4bc1145-095f-4fd5-866c-99851b01df27">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>sWords_set <span class="op">=</span> <span class="bu">set</span>(sWords)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>cleaned_tweets <span class="op">=</span> []</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> index, row <span class="kw">in</span> DukeT.iterrows():</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    wws <span class="op">=</span> [w <span class="cf">for</span> w <span class="kw">in</span> row.Duke_cleaned_tweets.split() <span class="cf">if</span> <span class="kw">not</span> w <span class="kw">in</span> sWords_set <span class="kw">and</span> <span class="st">&#39;#&#39;</span> <span class="kw">not</span> <span class="kw">in</span> w.lower()]</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    cleaned_tweets.append(<span class="st">&#39; &#39;</span>.join(wws))</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>] <span class="op">=</span> cleaned_tweets</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="126">
+
+  <div id="df-8a2e5eb9-6a39-4b44-a786-46f4a8a5496e">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>Queen dead Duke Nukem D</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>SmiythYaslin They dont need They dont even nee...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking duke guan ha ha laugh I tried smothe r w...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit royalty Dior honored dressed Pri...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>NeonBear Well least still hair head</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V Obsidian Brigade tactical turnbased ...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>septimusajprime This like performing David duke</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love image The Duke Edinburgh He definitely en...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow A closer look formal threepiece suit speci...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>Based th child Duke Manchester Kylemore castle...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8a2e5eb9-6a39-4b44-a786-46f4a8a5496e')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8a2e5eb9-6a39-4b44-a786-46f4a8a5496e button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8a2e5eb9-6a39-4b44-a786-46f4a8a5496e');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="127" id="IijeFkyjwpkZ">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>DukeT.to_csv(<span class="st">&#39;University_Clean_Tweets_Duke.csv&#39;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="129"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="7B8WSZLEwsdh" data-outputId="47e93a16-7121-48ae-b0f8-872d27ae6247">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bag-of-words </span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>bow_vectorizer <span class="op">=</span> CountVectorizer()</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>BOW_features <span class="op">=</span> bow_vectorizer.fit_transform(DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>])</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># TF-IDF </span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>tif_vectorizer <span class="op">=</span> TfidfVectorizer()</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>tif_features <span class="op">=</span> tif_vectorizer.fit_transform(DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>])</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing the feature matrices</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Bag-of-words features:</span><span class="ch">\n</span><span class="st">&quot;</span>, BOW_features.toarray())</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">TF-IDF features:</span><span class="ch">\n</span><span class="st">&quot;</span>, tif_features.toarray())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Bag-of-words features:
+ [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+
+TF-IDF features:
+ [[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="130" id="Ha7_atUhwxi5">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>pWords <span class="op">=</span> <span class="bu">set</span>(nltk.corpus.opinion_lexicon.positive())</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>nWords <span class="op">=</span> <span class="bu">set</span>(nltk.corpus.opinion_lexicon.negative())</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> label_class(text):</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    pCount <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    nCount <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    ws <span class="op">=</span> text.split()</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> word <span class="kw">in</span> ws:</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> word <span class="kw">in</span> pWords:</span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>            pCount <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> word <span class="kw">in</span> nWords:</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>            nCount <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pCount <span class="op">&gt;</span> nCount:</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;positive&#39;</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">&#39;negative&#39;</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="133" id="36-xXSyBw1Dh">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>st_labels <span class="op">=</span> []</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> tw <span class="kw">in</span> DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>]:</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    lb <span class="op">=</span> label_class(tw)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    st_labels.append(lb)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Sentiment&#39;</span>] <span class="op">=</span> st_labels</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="160"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="447otUbgHGWF" data-outputId="ae95ed24-95aa-4bbd-e7e9-31252eddb850">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>DukeT[<span class="st">&#39;Sentiment&#39;</span>].value_counts()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="160">
+<pre><code>negative    5202
+positive    1904
+Name: Sentiment, dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="134" id="9j1eu4XAw7x0">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>DukeT.to_csv(<span class="st">&#39;University_Clean_Tweets_Label_Duke.csv&#39;</span>, index <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="135"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:581}"
+id="dF1RiQkEw-ML" data-outputId="40928148-7863-4401-813d-febad8d76a6d">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>DukeT.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="135">
+
+  <div id="df-f2708b90-a75b-40a2-bc35-cd49cfb007d8">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hashtag</th>
+      <th>Date_Created</th>
+      <th>Username</th>
+      <th>Tweet</th>
+      <th>Duke_cleaned_tweets</th>
+      <th>Sentiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:35+00:00</td>
+      <td>gamefriend</td>
+      <td>the Queen is dead, in Duke Nukem 3D</td>
+      <td>Queen dead Duke Nukem D</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:33+00:00</td>
+      <td>Shesaidno1997</td>
+      <td>@SmiythYaslin They don’t need them.  They don’...</td>
+      <td>SmiythYaslin They dont need They dont even nee...</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:27+00:00</td>
+      <td>1对1❤️欢迎比价/下单看主页/语音/视频/调教/女s/女m/连麦</td>
+      <td>rking with the duke guan. ha ha laugh. I tried...</td>
+      <td>rking duke guan ha ha laugh I tried smothe r w...</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:24+00:00</td>
+      <td>Telma Cosentino</td>
+      <td>Tailoring fit for royalty.\n\nDior is honored ...</td>
+      <td>Tailoring fit royalty Dior honored dressed Pri...</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:20+00:00</td>
+      <td>👑Red Dirt Duke👑</td>
+      <td>@NeonBear007 Well at least you still have hair...</td>
+      <td>NeonBear Well least still hair head</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:17+00:00</td>
+      <td>Eric Carter</td>
+      <td>Tactics V: "Obsidian Brigade" is a tactical tu...</td>
+      <td>Tactics V Obsidian Brigade tactical turnbased ...</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:11+00:00</td>
+      <td>Brown Skin Girl🥂</td>
+      <td>@septimusajprime This is like performing for D...</td>
+      <td>septimusajprime This like performing David duke</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:07+00:00</td>
+      <td>Jun Ozono🇯🇵</td>
+      <td>Love this image of The Duke of Edinburgh. He d...</td>
+      <td>Love image The Duke Edinburgh He definitely en...</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:09:04+00:00</td>
+      <td>kopi pahit</td>
+      <td>Wow! 😍🤌🏾\n\nA closer look at the formal three-...</td>
+      <td>Wow A closer look formal threepiece suit speci...</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Duke</td>
+      <td>2023-05-07 00:08:53+00:00</td>
+      <td>Raymond Norman</td>
+      <td>on .\n\nBased on the 4th child of the Duke of ...</td>
+      <td>Based th child Duke Manchester Kylemore castle...</td>
+      <td>negative</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f2708b90-a75b-40a2-bc35-cd49cfb007d8')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-f2708b90-a75b-40a2-bc35-cd49cfb007d8 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-f2708b90-a75b-40a2-bc35-cd49cfb007d8');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell code" data-execution_count="137" id="Mlc7EWFJxBie">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.preprocessing.text <span class="im">import</span> Tokenizer</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.utils <span class="im">import</span> pad_sequences</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>tokenizer <span class="op">=</span> Tokenizer(num_words <span class="op">=</span> <span class="dv">6000</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Tokenizing</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>tokenizer.fit_on_texts(DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>].tolist())</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Generating sequences &amp; apply padding</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>sequences <span class="op">=</span> tokenizer.texts_to_sequences(DukeT[<span class="st">&#39;Duke_cleaned_tweets&#39;</span>].tolist())</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="bu">max</span>([<span class="bu">len</span>(x) <span class="cf">for</span> x <span class="kw">in</span> sequences])</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>Duke_padded <span class="op">=</span> tensorflow.keras.preprocessing.sequence.pad_sequences(sequences, padding <span class="op">=</span> <span class="st">&#39;post&#39;</span>, maxlen <span class="op">=</span> length)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="138" id="78zLxizVxESg">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Splitting dataset into training and testing</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co"># define the target variable</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>Duke_target_label <span class="op">=</span> DukeT[<span class="st">&#39;Sentiment&#39;</span>] </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># split the data into training and testing sets</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(Duke_padded, Duke_target_label, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="139"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="TXAzMJbuxIEn" data-outputId="20bf4a4c-5dcc-419b-aa1e-ff00befc5c85">
+<div class="sourceCode" id="cb33"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.models <span class="im">import</span> Sequential</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> keras.layers <span class="im">import</span> Embedding, LSTM, Conv1D, GlobalMaxPooling1D, GRU, Dense, Reshape, MaxPooling1D, Dropout</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="co"># define the model architecture</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>DTSAmodel <span class="op">=</span> Sequential()</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(Embedding(<span class="dv">6000</span>, <span class="dv">64</span>, input_length <span class="op">=</span> length))</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(LSTM(<span class="dv">32</span>, dropout <span class="op">=</span> <span class="fl">0.2</span>, recurrent_dropout <span class="op">=</span> <span class="fl">0.2</span>, return_sequences <span class="op">=</span> <span class="va">True</span>))</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(Conv1D(<span class="dv">64</span>, kernel_size <span class="op">=</span> <span class="dv">3</span>, padding <span class="op">=</span> <span class="st">&#39;same&#39;</span>, activation <span class="op">=</span> <span class="st">&#39;relu&#39;</span>))</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(MaxPooling1D(pool_size <span class="op">=</span> <span class="dv">2</span>))</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(Dropout(<span class="fl">0.2</span>))</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(GRU(<span class="dv">16</span>, dropout <span class="op">=</span> <span class="fl">0.2</span>, recurrent_dropout <span class="op">=</span> <span class="fl">0.2</span>))</span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>DTSAmodel.add(Dense(<span class="dv">1</span>, activation <span class="op">=</span> <span class="st">&#39;sigmoid&#39;</span>))</span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>DTSAmodel.summary()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Model: &quot;sequential_9&quot;
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ embedding_8 (Embedding)     (None, 46, 64)            384000    
+                                                                 
+ lstm_8 (LSTM)               (None, 46, 32)            12416     
+                                                                 
+ conv1d_11 (Conv1D)          (None, 46, 64)            6208      
+                                                                 
+ max_pooling1d_11 (MaxPoolin  (None, 23, 64)           0         
+ g1D)                                                            
+                                                                 
+ dropout_11 (Dropout)        (None, 23, 64)            0         
+                                                                 
+ gru_9 (GRU)                 (None, 16)                3936      
+                                                                 
+ dense_8 (Dense)             (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 406,577
+Trainable params: 406,577
+Non-trainable params: 0
+_________________________________________________________________
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="144" id="mgyg_x7711_G">
+<div class="sourceCode" id="cb35"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile the model</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>DTSAmodel.<span class="bu">compile</span>(loss <span class="op">=</span> <span class="st">&#39;binary_crossentropy&#39;</span>, optimizer <span class="op">=</span> <span class="st">&#39;adam&#39;</span>, metrics <span class="op">=</span> [<span class="st">&#39;accuracy&#39;</span>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="145"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="2f-cGxS7xodp" data-outputId="7c87497b-c60b-46c4-b46c-76600188a0da">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Training the model</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> LabelEncoder</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># OneHot Encoding</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>le <span class="op">=</span> LabelEncoder()</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>y_train <span class="op">=</span> le.fit_transform(y_train)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> le.transform(y_test)</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>history <span class="op">=</span> DTSAmodel.fit(X_train, y_train, epochs <span class="op">=</span> <span class="dv">15</span>, batch_size <span class="op">=</span> <span class="dv">64</span>, validation_data<span class="op">=</span>(X_test, y_test))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/15
+89/89 [==============================] - 21s 151ms/step - loss: 0.5914 - accuracy: 0.7227 - val_loss: 0.5718 - val_accuracy: 0.7405
+Epoch 2/15
+89/89 [==============================] - 13s 148ms/step - loss: 0.4971 - accuracy: 0.7694 - val_loss: 0.3880 - val_accuracy: 0.8340
+Epoch 3/15
+89/89 [==============================] - 13s 147ms/step - loss: 0.2784 - accuracy: 0.8936 - val_loss: 0.4267 - val_accuracy: 0.8172
+Epoch 4/15
+89/89 [==============================] - 12s 132ms/step - loss: 0.1657 - accuracy: 0.9446 - val_loss: 0.4459 - val_accuracy: 0.8256
+Epoch 5/15
+89/89 [==============================] - 12s 133ms/step - loss: 0.1209 - accuracy: 0.9611 - val_loss: 0.5795 - val_accuracy: 0.8193
+Epoch 6/15
+89/89 [==============================] - 13s 147ms/step - loss: 0.0967 - accuracy: 0.9715 - val_loss: 0.6096 - val_accuracy: 0.8263
+Epoch 7/15
+89/89 [==============================] - 13s 148ms/step - loss: 0.0654 - accuracy: 0.9824 - val_loss: 0.6805 - val_accuracy: 0.8193
+Epoch 8/15
+89/89 [==============================] - 13s 148ms/step - loss: 0.0520 - accuracy: 0.9865 - val_loss: 0.7212 - val_accuracy: 0.8228
+Epoch 9/15
+89/89 [==============================] - 13s 148ms/step - loss: 0.0451 - accuracy: 0.9875 - val_loss: 0.7094 - val_accuracy: 0.8115
+Epoch 10/15
+89/89 [==============================] - 13s 142ms/step - loss: 0.0419 - accuracy: 0.9894 - val_loss: 0.7170 - val_accuracy: 0.8179
+Epoch 11/15
+89/89 [==============================] - 11s 125ms/step - loss: 0.0386 - accuracy: 0.9898 - val_loss: 0.8247 - val_accuracy: 0.8214
+Epoch 12/15
+89/89 [==============================] - 13s 140ms/step - loss: 0.0408 - accuracy: 0.9891 - val_loss: 0.6817 - val_accuracy: 0.8284
+Epoch 13/15
+89/89 [==============================] - 13s 146ms/step - loss: 0.0315 - accuracy: 0.9912 - val_loss: 0.9062 - val_accuracy: 0.8136
+Epoch 14/15
+89/89 [==============================] - 13s 146ms/step - loss: 0.0304 - accuracy: 0.9907 - val_loss: 0.8301 - val_accuracy: 0.8207
+Epoch 15/15
+89/89 [==============================] - 13s 142ms/step - loss: 0.0292 - accuracy: 0.9928 - val_loss: 0.7325 - val_accuracy: 0.8319
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="148"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="kepX0t0WxKfb" data-outputId="7d703b74-ce6a-42f9-e2b0-6cacba037cd3">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Predicting test data</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>y_predicted <span class="op">=</span> DTSAmodel.predict(X_test)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>pred_label <span class="op">=</span> [<span class="dv">1</span> <span class="cf">if</span> p <span class="op">&gt;</span> <span class="fl">0.5</span> <span class="cf">else</span> <span class="dv">0</span> <span class="cf">for</span> p <span class="kw">in</span> y_predicted]</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Accuracy</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>accuracy <span class="op">=</span> accuracy_score(y_test, pred_label)</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&#39;Test accuracy: </span><span class="sc">{</span>accuracy<span class="op">*</span><span class="dv">100</span><span class="sc">}</span><span class="ss">%&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>45/45 [==============================] - 1s 14ms/step
+Test accuracy: 83.19268635724332%
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="149"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:628}"
+id="7c4KzviZ3G8Q" data-outputId="e5697d47-1d6c-4cbe-cc34-255e0d6ae995">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score, precision_score, recall_score, f1_score, confusion_matrix</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>Pred_label <span class="op">=</span> (DTSAmodel.predict(X_test) <span class="op">&gt;</span> <span class="fl">0.5</span>).astype(<span class="st">&quot;int32&quot;</span>)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>Pred_label <span class="op">=</span> np.squeeze(Pred_label)</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Classication Report</span></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> classification_report</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(classification_report(y_test, Pred_label))</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Confusion matrix</span></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>cm <span class="op">=</span> confusion_matrix(y_test, Pred_label)</span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>, fmt<span class="op">=</span><span class="st">&#39;g&#39;</span>)</span>
+<span id="cb40-19"><a href="#cb40-19" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Predicted&#39;</span>)</span>
+<span id="cb40-20"><a href="#cb40-20" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;True&#39;</span>)</span>
+<span id="cb40-21"><a href="#cb40-21" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>45/45 [==============================] - 1s 23ms/step
+              precision    recall  f1-score   support
+
+           0       0.88      0.90      0.89      1053
+           1       0.69      0.63      0.66       369
+
+    accuracy                           0.83      1422
+   macro avg       0.78      0.77      0.78      1422
+weighted avg       0.83      0.83      0.83      1422
+
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_8493790ffdbf47a99f19eb9e2464283f/9727030ebde4c0242501d9196e2b7e4758ea9618.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="157"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3UB-W-k53Wdw" data-outputId="bff63a3b-8fab-4d02-b1d2-af8582d6408a">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Testing sentences</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>sentences <span class="op">=</span> [</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I am angry.&quot;</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I really like the new design of your website!&quot;</span>,</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I’m not sure if I like the new design.&quot;</span>,</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I&#39;m feeling so grateful for all the support I&#39;ve received. It&#39;s truly uplifting.&quot;</span>,</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;It was the best experience.&quot;</span>,</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;The new design is awful!.&quot;</span>,</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I enjoyed this program.&quot;</span>,</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I feel sad.&quot;</span>,</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;The movie was absolutely fantastic! I loved every minute of it.&quot;</span>,</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;The food was delicious.&quot;</span>,</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;High quality pants. Very comfortable and great for sport activities. Good price for nice quality! I recommend to all fans of sports.&quot;</span>,</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;I&#39;m feeling neutral.&quot;</span>,</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Not impressed.&quot;</span>,</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Loving it!&quot;</span></span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>test_sen <span class="op">=</span> tokenizer.texts_to_sequences(sentences)</span>
+<span id="cb42-21"><a href="#cb42-21" aria-hidden="true" tabindex="-1"></a>Test_sen_pad <span class="op">=</span> pad_sequences(test_sen, maxlen <span class="op">=</span> length, padding <span class="op">=</span> <span class="st">&#39;post&#39;</span>, truncating <span class="op">=</span> <span class="st">&#39;post&#39;</span>)</span>
+<span id="cb42-22"><a href="#cb42-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-23"><a href="#cb42-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Predicting sentiment for new sequences of sentence</span></span>
+<span id="cb42-24"><a href="#cb42-24" aria-hidden="true" tabindex="-1"></a>pred <span class="op">=</span> DTSAmodel.predict(Test_sen_pad)</span>
+<span id="cb42-25"><a href="#cb42-25" aria-hidden="true" tabindex="-1"></a>pred_senti <span class="op">=</span> (pred <span class="op">&gt;</span> <span class="fl">0.5</span>).astype(<span class="bu">int</span>)</span>
+<span id="cb42-26"><a href="#cb42-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-27"><a href="#cb42-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing predicted sentiments</span></span>
+<span id="cb42-28"><a href="#cb42-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb42-29"><a href="#cb42-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Test_Sentences -----  Sentiment_Labels </span><span class="ch">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb42-30"><a href="#cb42-30" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(sentences)):</span>
+<span id="cb42-31"><a href="#cb42-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(sentences[i], <span class="st">&#39; ----- &#39;</span>, <span class="st">&#39;positive&#39;</span> <span class="cf">if</span> pred_senti[i] <span class="op">==</span> <span class="dv">1</span> <span class="cf">else</span> <span class="st">&#39;negative&#39;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1/1 [==============================] - 0s 130ms/step
+
+
+Test_Sentences -----  Sentiment_Labels 
+
+I am angry.  -----  negative
+I really like the new design of your website!  -----  positive
+I’m not sure if I like the new design.  -----  positive
+I&#39;m feeling so grateful for all the support I&#39;ve received. It&#39;s truly uplifting.  -----  positive
+It was the best experience.  -----  positive
+The new design is awful!.  -----  negative
+I enjoyed this program.  -----  positive
+I feel sad.  -----  negative
+The movie was absolutely fantastic! I loved every minute of it.  -----  positive
+The food was delicious.  -----  negative
+High quality pants. Very comfortable and great for sport activities. Good price for nice quality! I recommend to all fans of sports.  -----  positive
+I&#39;m feeling neutral.  -----  negative
+Not impressed.  -----  negative
+Loving it!  -----  positive
+</code></pre>
+</div>
+</div>
+</body>
+</html>
